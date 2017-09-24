@@ -1,0 +1,183 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input, select{
+  border: 1px solid #a7cbe8;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.column{
+  width: 80%;
+  margin: auto;
+}
+
+.fieldset{
+  border: 1px solid #fc5da2;
+  border-radius: 5px;
+  width: 40%;
+  margin: 10px 10px 10px 0;
+  padding: 10px 20px;
+  display: inline;
+}
+
+.field{
+  padding-bottom: 10px;
+}
+
+.label span{
+  font-size: 15px;
+}
+
+.required .label{
+  position: relative;
+}
+
+.required .label::after{
+  pposition: absolute;
+  top: 15%;
+  right: -20px;
+  content: "*";
+  color: #fc3f0a;
+}
+
+.error-message{
+  display: inline;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.warning-visible{
+  color: #fc3f0a;
+}
+
+.firstname-wrapper{
+  position: relative;
+}
+
+.names-list-wrapper{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  height: 10rem;
+  width: 25%;
+}
+
+.names-list-wrapper{
+  display: none;
+}
+
+.names-list-wrapper select{
+  width: 100%;
+}
+
+.names-list-wrapper select option{
+  padding: 3%;
+  cursor: pointer;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.actions-toolbar div{
+  display: inline;
+}
+
+.btn{
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 12px;
+  letter-spacing: 1px;
+  color: #383434;
+  font-weight: 700;
+}
+
+.back-btn{
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #383434;
+  transition: all .2s ease-in-out;
+}
+
+.back-btn:hover{
+  transform: scale(.97);
+}
+
+.submit-btn{
+  background-color: #41c4f4;
+  border-color: transparent;
+  margin-left: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.submit-btn:hover{
+  transform: scale(.97);
+}
+
+.success-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.overlay-content-wrapper{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  z-index: 200;
+  height: 300px;
+  width: auto;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.overlay-items{
+  padding: 0 50px;
+  margin: 25% 0;
+}
+
+.overlay-items img{
+  width: 50px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  left: 45%;
+  top: 10%;
+}
+
+.overlay-items p{
+  font-size: 25px;
+  text-align: center;
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}

@@ -147,6 +147,7 @@ input:focus{
   position: absolute;
   top: 30%;
   left: 30%;
+  right: 30%;
   z-index: 200;
   height: 300px;
   width: auto;

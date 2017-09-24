@@ -172,8 +172,16 @@ function addDash(){
 }
 
 function formSubmit(){
-  overlay.classList.toggle('show');
-  event.stopPropagation();
+  for (var i = 0; i < requiredFields.length; i++){
+    if (requiredFields[i].value == ""){
+      console.log("zle");
+      requiredFields[i].style.border = "1px solid #fc3f0a";
+      requiredFields[i].nextElementSibling.textContent = "This field is required"
+    } else {
+      overlay.classList.toggle('show');
+      event.stopPropagation();
+    }
+  }
 }
 
 overlayContent.addEventListener('click', function(event){

@@ -171,15 +171,19 @@ function addDash(){
   }, true);
 }
 
+
 function formSubmit(){
+  var empty = true;
   for (var i = 0; i < requiredFields.length; i++){
     if (requiredFields[i].value == ""){
+      empty = false;
       requiredFields[i].style.border = "1px solid #fc3f0a";
-      requiredFields[i].nextElementSibling.textContent = "This field is required"
-    } else {
-      overlay.classList.toggle('show');
-      event.stopPropagation();
+      requiredFields[i].nextElementSibling.textContent = "This field is required";
     }
+  }
+  if (empty){
+    overlay.classList.toggle('show');
+    event.stopPropagation();
   }
 }
 
